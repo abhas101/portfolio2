@@ -115,11 +115,6 @@ button:hover{
     .hero-container{
         grid-template-columns: 1fr;
     }
-    nav{
-        width: 750px;
-    }
-    .container{
-        grid-template-columns: 1fr;
-    }
+   
     
 }
