@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    
+    font-size:3rem;
+    
+    width:100%;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/ 2);
+}
+
+.logo{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding:0 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+    font-size:20px;
+    transition: 0.5s;
+
+}
+nav a:hover{
+    color: rgb(5, 173, 251);
+    font-size: 30px;
+}
+
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height:95vh;
+    padding: 3rem calc((100vw - 1300px)/ 2);
+
+}
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    color: #000;
+    padding: 0 2rem;
+
+}
+
+.column-left h1{
+    margin-top: 20%;
+    color: white;
+    text-shadow: 0 0 5px;
+    
+    font-size:3rem;
+
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size:3rem;
+    line-height: 1;
+    color: rgb(186, 186, 186);
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffffff;
+    background: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.5s;
+    width: 500px;
+
+}
+a {
+    text-decoration: none;
+}
+button:hover{
+    color:#255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+}
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+
+}
+
+
+@media screen and (max-width:768px){
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        width: 750px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    
+}
